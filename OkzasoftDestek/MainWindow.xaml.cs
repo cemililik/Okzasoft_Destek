@@ -24,7 +24,7 @@ namespace OkzasoftDestek
 
         private void brdRightTop_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            this.DragMove();
+            //this.DragMove();
         }
 
         private void hizmetOzeti_Click(object sender, RoutedEventArgs e)

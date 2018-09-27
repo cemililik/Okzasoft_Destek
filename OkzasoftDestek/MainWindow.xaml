@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OkzasoftDestek"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+        Title="Okzasoft Destek" Height="768" Width="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="180"/>
@@ -68,7 +68,7 @@
 
                 <Border Background="LightGray" x:Name="brdRightTop" MouseDown="brdRightTop_MouseDown">
                     <DockPanel Width="72" HorizontalAlignment="Right">
-                        <Button Content="__" Style="{DynamicResource miniButonlar}" Background="LightGray" Height="35" VerticalAlignment="Top"/>
+                        <Button Content="__" Style="{DynamicResource miniButonlar}" Background="LightGray" Height="35" VerticalAlignment="Top" BorderBrush="LightGray"/>
                         <Button Content="X" x:Name="btnKapat" Click="btnKapat_Click" Style="{DynamicResource miniButonlar}" Background="#FFEFFDB3"/>
                     </DockPanel>
                 </Border>
