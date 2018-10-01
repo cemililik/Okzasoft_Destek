@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Okzasoft Destek"  Height="768" Width="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Icon="images/icons/tech-support.png">
     
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="180"/>

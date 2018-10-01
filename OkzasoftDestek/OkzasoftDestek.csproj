@@ -51,6 +51,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FakeData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FakeData.1.0.0\lib\FakeData.dll</HintPath>
+    </Reference>
     <Reference Include="ReachFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -79,6 +82,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="data\baglanti.cs" />
+    <Compile Include="data\DBManager\DatabaseContext.cs" />
+    <Compile Include="data\IOCard.cs" />
+    <Compile Include="data\Kamera.cs" />
+    <Compile Include="data\Kisiler.cs" />
+    <Compile Include="data\Kurumlar.cs" />
     <Compile Include="Kontroller\uc_Ekipman.xaml.cs">
       <DependentUpon>uc_Ekipman.xaml</DependentUpon>
     </Compile>
@@ -162,8 +171,6 @@
     <Resource Include="images\icons\schedule.png" />
     <Resource Include="images\icons\tools.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

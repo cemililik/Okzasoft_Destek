@@ -1,9 +1,14 @@
-﻿using OkzasoftDestek.Kontroller;
+﻿using OkzasoftDestek.data.DBManager;
+using OkzasoftDestek.data;
+using OkzasoftDestek.Kontroller;
 using OkzasoftDestek.sinif;
 using System;
+//using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
+
 
 namespace OkzasoftDestek
 {
@@ -15,6 +20,8 @@ namespace OkzasoftDestek
         public MainWindow()
         {
             InitializeComponent();
+            DatabaseContext db = new DatabaseContext();
+            var kisiler = db.Kisiler.ToList();
         }
 
         private void btnKapat_Click(object sender, RoutedEventArgs e)
@@ -46,5 +53,16 @@ namespace OkzasoftDestek
         {
             uc_Cagir.ucEkle(masterGrid, new uc_Ekipman());
         }
+
+        //SqlConnection DatabaseContext = new SqlConnection(
+        //    new SqlConnectionStringBuilder()
+        //    {
+        //        DataSource = "DESKTOP-04SEUSQ",
+        //        InitialCatalog = "destekDB5",
+        //        IntegratedSecurity = true
+        //    }.ConnectionString
+        //    );
+
+     
     }
 }
