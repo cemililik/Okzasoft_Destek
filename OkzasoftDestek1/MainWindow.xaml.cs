@@ -1,16 +1,20 @@
-﻿using OkzasoftDestek.data.DBManager;
-using OkzasoftDestek.data;
-using OkzasoftDestek.Kontroller;
-using OkzasoftDestek.sinif;
+﻿using OkzasoftDestek1.UserControls;
 using System;
-//using System.Collections.Generic;
-using System.Data.SqlClient;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
-
-namespace OkzasoftDestek
+namespace OkzasoftDestek1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -20,8 +24,6 @@ namespace OkzasoftDestek
         public MainWindow()
         {
             InitializeComponent();
-            DatabaseContext db = new DatabaseContext();
-            var kisiler = db.Kisiler.ToList();
         }
 
         private void btnKapat_Click(object sender, RoutedEventArgs e)
@@ -54,15 +56,9 @@ namespace OkzasoftDestek
             uc_Cagir.ucEkle(masterGrid, new uc_Ekipman());
         }
 
-        //SqlConnection DatabaseContext = new SqlConnection(
-        //    new SqlConnectionStringBuilder()
-        //    {
-        //        DataSource = "DESKTOP-04SEUSQ",
-        //        InitialCatalog = "destekDB5",
-        //        IntegratedSecurity = true
-        //    }.ConnectionString
-        //    );
-
-     
+        private void btnKucult_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
     }
 }

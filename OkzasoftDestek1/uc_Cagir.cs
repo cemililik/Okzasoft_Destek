@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace OkzasoftDestek.sinif
+namespace OkzasoftDestek1
 {
     public class uc_Cagir
     {

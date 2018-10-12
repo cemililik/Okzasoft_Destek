@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace OkzasoftDestek.Kontroller
+namespace OkzasoftDestek1.UserControls
 {
     /// <summary>
-    /// Interaction logic for uc_Ozet.xaml
+    /// Interaction logic for uc_Ekipman.xaml
     /// </summary>
-    public partial class uc_Ozet : UserControl
+    public partial class uc_Ekipman : UserControl
     {
-        public uc_Ozet()
+        public uc_Ekipman()
         {
             InitializeComponent();
         }

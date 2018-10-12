@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OkzasoftDestek.Properties
+namespace OkzasoftDestek1.Properties
 {
 
 

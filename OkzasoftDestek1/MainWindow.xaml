@@ -1,13 +1,11 @@
-﻿<Window x:Class="OkzasoftDestek.MainWindow"
+﻿<Window x:Class="OkzasoftDestek1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:OkzasoftDestek"
+        xmlns:local="clr-namespace:OkzasoftDestek1"
         mc:Ignorable="d"
-        Title="Okzasoft Destek"  Height="768" Width="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Icon="images/icons/tech-support.png">
-    
-    
+        Title="MainWindow" Height="768" Width="1366" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Icon="images/icons/tech-support.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="180"/>
@@ -70,7 +68,7 @@
 
                 <Border Background="LightGray" x:Name="brdRightTop" MouseDown="brdRightTop_MouseDown">
                     <DockPanel Width="72" HorizontalAlignment="Right">
-                        <Button Content="__" Style="{DynamicResource miniButonlar}" Background="LightGray" Height="35" VerticalAlignment="Top" BorderBrush="LightGray"/>
+                        <Button Content="__" x:Name="btnKucult" Click="btnKucult_Click" Style="{DynamicResource miniButonlar}" Background="LightGray" Height="35" VerticalAlignment="Top" BorderBrush="LightGray"/>
                         <Button Content="X" x:Name="btnKapat" Click="btnKapat_Click" Style="{DynamicResource miniButonlar}" Background="#FFEFFDB3"/>
                     </DockPanel>
                 </Border>

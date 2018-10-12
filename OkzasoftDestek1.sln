@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkzasoftDestek", "OkzasoftDestek\OkzasoftDestek.csproj", "{874CC26E-80A6-4C80-B42D-4F379DC4E408}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkzasoftDestek1", "OkzasoftDestek1\OkzasoftDestek1.csproj", "{2AC63B15-5001-447C-BBCF-8EA9D23B2C10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{874CC26E-80A6-4C80-B42D-4F379DC4E408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{874CC26E-80A6-4C80-B42D-4F379DC4E408}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{874CC26E-80A6-4C80-B42D-4F379DC4E408}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{874CC26E-80A6-4C80-B42D-4F379DC4E408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC63B15-5001-447C-BBCF-8EA9D23B2C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC63B15-5001-447C-BBCF-8EA9D23B2C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC63B15-5001-447C-BBCF-8EA9D23B2C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC63B15-5001-447C-BBCF-8EA9D23B2C10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {513B521D-D208-49B2-AA37-814163114B3E}
+		SolutionGuid = {37C67828-0063-4C6D-8A3B-51BB7DBF35F6}
 	EndGlobalSection
 EndGlobal

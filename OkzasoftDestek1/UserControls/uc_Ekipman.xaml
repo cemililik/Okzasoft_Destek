@@ -1,11 +1,11 @@
-﻿<UserControl x:Class="OkzasoftDestek.Kontroller.uc_Ekipman"
+﻿<UserControl x:Class="OkzasoftDestek1.UserControls.uc_Ekipman"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:OkzasoftDestek.Kontroller"
+             xmlns:local="clr-namespace:OkzasoftDestek1.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="588" d:DesignWidth="1016">
+              d:DesignHeight="588" d:DesignWidth="1016">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -24,7 +24,7 @@
         </Border>
         <Border Grid.Column="0" Grid.Row="1" Background="Red" Margin="0,0,10,0">
             <DataGrid BorderBrush="{x:Null}" BorderThickness="0">
-                
+
             </DataGrid>
         </Border>
         <Border Grid.Column="1" Grid.Row="1" Background="Red" Margin="10,0,0,0">
@@ -36,7 +36,7 @@
             <StackPanel  VerticalAlignment="Center">
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Kamera IP :  " FontWeight="Bold"/>
-                    <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
                     <Label Width="115"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
