@@ -58,11 +58,17 @@
     <Compile Include="UserControls\uc_Ekipman.xaml.cs">
       <DependentUpon>uc_Ekipman.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\uc_Giris.xaml.cs">
+      <DependentUpon>uc_Giris.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\uc_Kisiler.xaml.cs">
       <DependentUpon>uc_Kisiler.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\uc_Kurumlar.xaml.cs">
       <DependentUpon>uc_Kurumlar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_OlayEkle.xaml.cs">
+      <DependentUpon>uc_OlayEkle.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\uc_Ozet.xaml.cs">
       <DependentUpon>uc_Ozet.xaml</DependentUpon>
@@ -83,11 +89,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\uc_Giris.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\uc_Kisiler.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\uc_Kurumlar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\uc_OlayEkle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,6 +145,15 @@
     <Resource Include="images\icons\tech-support.png" />
     <Resource Include="images\icons\tools.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\OkzasoftDestek.BusinessLogicLayer\OkzasoftDestek.BusinessLogicLayer.csproj">
+      <Project>{81c7a658-3bbf-4a58-ab2d-aaca3e4314e7}</Project>
+      <Name>OkzasoftDestek.BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OkzasoftDestek.Entities\OkzasoftDestek.Entities.csproj">
+      <Project>{1147e0af-7824-415b-886d-202f13d9c304}</Project>
+      <Name>OkzasoftDestek.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

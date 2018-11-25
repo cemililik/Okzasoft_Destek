@@ -8,31 +8,27 @@
               d:DesignHeight="588" d:DesignWidth="1016">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="70"/>
             <RowDefinition/>
-            <RowDefinition Height="200"/>
+            <RowDefinition Height="250"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" Grid.Row="0" Background="White" Margin="0,0,10,0">
-            <Label Content="Kamera" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" />
-        </Border>
-        <Border Grid.Column="1" Grid.Row="0" Background="White" Margin="10,0,0,0">
-            <Label Content="I/O Kart" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" />
-        </Border>
-        <Border Grid.Column="0" Grid.Row="1" Background="Red" Margin="0,0,10,0">
-            <DataGrid BorderBrush="{x:Null}" BorderThickness="0">
 
-            </DataGrid>
+        <Border Grid.Column="1" Grid.Row="0" Background="{x:Null}" Margin="5,0,5,5">
+            <Label Content="Ekipmanlar" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" />
         </Border>
-        <Border Grid.Column="1" Grid.Row="1" Background="Red" Margin="10,0,0,0">
-            <DataGrid BorderBrush="{x:Null}" BorderThickness="0">
+        <Border Grid.Column="0" Grid.Row="1" Background="Red" Margin="5,0,5,0">
+            
+        </Border>
+        <Border Grid.Column="1" Grid.Row="1" Background="Red" Margin="5,0,5,0">
+            <ListBox BorderBrush="{x:Null}" BorderThickness="0">
 
-            </DataGrid>
+            </ListBox>
         </Border>
-        <Border Background="#FF879998" Grid.Column="0" Grid.Row="2" Margin="0,0,10,0">
+        <Border Background="#FF879998" Grid.Column="0" Grid.Row="2" Margin="5,0,5,0">
             <StackPanel  VerticalAlignment="Center">
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Kamera IP :  " FontWeight="Bold"/>
@@ -59,30 +55,46 @@
                 </DockPanel>
             </StackPanel>
         </Border>
-        <Border Background="#FF879998" Grid.Column="1" Grid.Row="2" Margin="10,0,0,0">
+        <Border Background="#FF879998" Grid.Column="1" Grid.Row="2" Margin="5,0,5,0">
             <StackPanel  VerticalAlignment="Center">
                 <DockPanel HorizontalAlignment="Right">
-                    <Label Content="I/O Kart IP :  " FontWeight="Bold"/>
+                    <Label Content="Ekipman Türü :  " FontWeight="Bold"/>
+                    <ComboBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <Label Width="385"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Ekipman IP :  " FontWeight="Bold"/>
                     <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
-                    <Label Width="115"/>
+                    <Label Width="385"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Marka :  " FontWeight="Bold"/>
                     <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
-                    <Label Width="115"/>
+                    <Label Width="385"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Model :  " FontWeight="Bold"/>
                     <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
-                    <Label Width="115"/>
+                    <Label Width="385"/>
                 </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Kullanıcı Adı :  " FontWeight="Bold"/>
+                    <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <Label Width="385"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Şifre :  " FontWeight="Bold"/>
+                    <TextBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <Label Width="385"/>
+                </DockPanel>
+                
                 <DockPanel Height="25"/>
                 <DockPanel HorizontalAlignment="Center">
-                    <Button Content="I/O Kart Ekle" x:Name="btnIoCardEkle" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Ekipman Ekle" x:Name="btnIoCardEkle" Style="{DynamicResource ucButonlar}"/>
                     <Label Width="10"/>
-                    <Button Content="I/O Kart Guncelle" x:Name="btnIoCardUpdate" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Ekipman Guncelle" x:Name="btnIoCardUpdate" Style="{DynamicResource ucButonlar}"/>
                     <Label Width="10"/>
-                    <Button Content="I/O Kart Sil" x:Name="btnIoCardSil" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Ekipman Sil" x:Name="btnIoCardSil" Style="{DynamicResource ucButonlar}"/>
                 </DockPanel>
             </StackPanel>
         </Border>

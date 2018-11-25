@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using OkzasoftDestek.BusinessLogicLayer;
+using OkzasoftDestek.Entities;
 
 namespace OkzasoftDestek1.UserControls
 {
@@ -23,6 +25,31 @@ namespace OkzasoftDestek1.UserControls
         public uc_Kisiler()
         {
             InitializeComponent();
+            ListeOlustur();
+        }
+
+        private void btnKisiEkle_Click(object sender, RoutedEventArgs e)
+        {
+            Guid kurummId = Guid.NewGuid();
+            OkzasoftDestek.BusinessLogicLayer.BLL BLL = new OkzasoftDestek.BusinessLogicLayer.BLL();
+            int ReturnValues = BLL.kisiEkle(txt_kisi_adsoyad.Text,txt_kisi_tel.Text, txt_kisi_eposta.Text, kurummId);
+            if (ReturnValues>0)
+            {
+                MessageBox.Show("Kayıt Başarılı", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
+                
+            }
+            else
+                MessageBox.Show("Bir sorun var ! ", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        private void ListeOlustur()
+        {
+            OkzasoftDestek.BusinessLogicLayer.BLL BLL = new OkzasoftDestek.BusinessLogicLayer.BLL();
+            List<Kisiler> KisiListesi = BLL.kisileriListele();
+            if (KisiListesi != null && KisiListesi.Count>0)
+            {
+                lst_kisilistesi.DataContext = KisiListesi;
+            }
         }
     }
 }

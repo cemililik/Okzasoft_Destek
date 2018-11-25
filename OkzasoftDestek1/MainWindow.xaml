@@ -32,7 +32,7 @@
                     </DockPanel>
                 </Border>
 
-                <Border Grid.Row="1">
+                <Border Grid.Row="1" x:Name="yeniKayit" MouseDown="yeniKayit_MouseDown">
                     <!--<Button Background="x:Null">-->
                     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Image x:Name="destekKaydi" >
@@ -65,6 +65,7 @@
                     <RowDefinition Height="35"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                <Canvas/>
 
                 <Border Background="LightGray" x:Name="brdRightTop" MouseDown="brdRightTop_MouseDown">
                     <DockPanel Width="72" HorizontalAlignment="Right">
@@ -72,6 +73,7 @@
                         <Button Content="X" x:Name="btnKapat" Click="btnKapat_Click" Style="{DynamicResource miniButonlar}" Background="#FFEFFDB3"/>
                     </DockPanel>
                 </Border>
+                <Label Content="Okzasoft Bilişim Sanayi Tic. Ltd. Şti. Destek Uygulaması" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" FontSize="25" Foreground="White" FontWeight="Bold"/>
             </Grid>
         </Border>
         <!--Menu-->

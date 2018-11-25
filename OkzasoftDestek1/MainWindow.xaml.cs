@@ -24,6 +24,7 @@ namespace OkzasoftDestek1
         public MainWindow()
         {
             InitializeComponent();
+            uc_Cagir.ucEkle(masterGrid, new uc_Giris());
         }
 
         private void btnKapat_Click(object sender, RoutedEventArgs e)
@@ -33,7 +34,7 @@ namespace OkzasoftDestek1
 
         private void brdRightTop_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //this.DragMove();
+            this.DragMove();
         }
 
         private void hizmetOzeti_Click(object sender, RoutedEventArgs e)
@@ -59,6 +60,11 @@ namespace OkzasoftDestek1
         private void btnKucult_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+        }
+
+        private void yeniKayit_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            uc_Cagir.ucEkle(masterGrid, new uc_OlayEkle());
         }
     }
 }

@@ -8,52 +8,52 @@
              d:DesignHeight="588" d:DesignWidth="1016">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="70"/>
             <RowDefinition/>
-            <RowDefinition Height="200"/>
+            <RowDefinition Height="230"/>
         </Grid.RowDefinitions>
-        <Border Grid.Column="0" Grid.Row="0" Background="White" Margin="5,0,5,0">
-            <Label Content="Kurumlar" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" />
+        <Border Grid.Column="0" Grid.Row="0" Margin="5,0,5,0">
+            <Label Content="Kurumlar" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" Background="{x:Null}" />
         </Border>
         <Border Grid.Column="0" Grid.Row="1" Background="Red" Margin="5,0,5,0">
-            <DataGrid BorderBrush="{x:Null}" BorderThickness="0">
+            <ListBox BorderBrush="{x:Null}" BorderThickness="0" x:Name="lst_kurumlar">
 
-            </DataGrid>
+            </ListBox>
         </Border>
-        <Border Background="#FF879998" Grid.Column="0" Grid.Row="2" Margin="0,0,10,0">
+        <Border Background="#FF879998" Grid.Column="0" Grid.Row="2" Margin="5,0,5,0">
             <StackPanel  VerticalAlignment="Center">
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Kurum Adı :  " FontWeight="Bold" FontSize="15"/>
-                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_ad"/>
                     <Label Width="305"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Telefon Numarası :  " FontWeight="Bold" FontSize="15"/>
-                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_telefon"/>
                     <Label Width="305"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Adresi :  " FontSize="15" FontWeight="Bold"/>
-                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_adres"/>
                     <Label Width="305"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Sehir :  " FontSize="15" FontWeight="Bold"/>
-                    <TextBox Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_sehir"/>
                     <Label Width="305"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Ulke :  " FontSize="15" FontWeight="Bold"/>
-                    <TextBox Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_ulke"/>
                     <Label Width="305"/>
                 </DockPanel>
                 <DockPanel Height="10"/>
                 <DockPanel HorizontalAlignment="Center">
-                    <Button Content="Kisi Ekle" x:Name="btnKurumEkle" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Kurum Ekle" x:Name="btnKurumEkle" Style="{DynamicResource ucButonlar}" Click="btnKurumEkle_Click" />
                     <Label Width="15"/>
-                    <Button Content="Kisi Guncelle" x:Name="btnKurumUpdate" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Kurum Guncelle" x:Name="btnKurumUpdate" Style="{DynamicResource ucButonlar}"/>
                     <Label Width="15"/>
-                    <Button Content="Kisi Sil" x:Name="btnKurumSil" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Kurum Sil" x:Name="btnKurumSil" Style="{DynamicResource ucButonlar}"/>
                 </DockPanel>
             </StackPanel>
         </Border>
