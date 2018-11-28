@@ -59,7 +59,16 @@
             <StackPanel  VerticalAlignment="Center">
                 <DockPanel HorizontalAlignment="Right">
                     <Label Content="Ekipman Türü :  " FontWeight="Bold"/>
-                    <ComboBox  Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <ComboBox Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_ekipman_tur">
+                        
+                        <ComboBoxItem>
+                            <TextBlock>Kamera</TextBlock>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock>IO Kart</TextBlock>
+                        </ComboBoxItem>
+                        
+                    </ComboBox>
                     <Label Width="385"/>
                 </DockPanel>
                 <DockPanel HorizontalAlignment="Right">
@@ -90,7 +99,7 @@
                 
                 <DockPanel Height="25"/>
                 <DockPanel HorizontalAlignment="Center">
-                    <Button Content="Ekipman Ekle" x:Name="btnIoCardEkle" Style="{DynamicResource ucButonlar}"/>
+                    <Button Content="Ekipman Ekle" x:Name="btnIoCardEkle" Style="{DynamicResource ucButonlar}" Click="btnIoCardEkle_Click"/>
                     <Label Width="10"/>
                     <Button Content="Ekipman Guncelle" x:Name="btnIoCardUpdate" Style="{DynamicResource ucButonlar}"/>
                     <Label Width="10"/>

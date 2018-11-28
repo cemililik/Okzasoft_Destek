@@ -24,5 +24,10 @@ namespace OkzasoftDestek1.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnIoCardEkle_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(txt_ekipman_tur.Text);
+        }
     }
 }

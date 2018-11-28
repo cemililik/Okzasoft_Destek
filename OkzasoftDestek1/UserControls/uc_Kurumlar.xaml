@@ -16,7 +16,7 @@
             <Label Content="Kurumlar" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" Background="{x:Null}" />
         </Border>
         <Border Grid.Column="0" Grid.Row="1" Background="Red" Margin="5,0,5,0">
-            <ListBox BorderBrush="{x:Null}" BorderThickness="0" x:Name="lst_kurumlar">
+            <ListBox BorderBrush="{x:Null}" BorderThickness="0" x:Name="lst_kurumlar" HorizontalContentAlignment="Center" DataObject.SettingData="lst_kurumlar_SettingData">
 
             </ListBox>
         </Border>

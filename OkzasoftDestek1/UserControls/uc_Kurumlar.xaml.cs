@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using FakeData;
 namespace OkzasoftDestek1.UserControls
 {
     /// <summary>
@@ -38,6 +38,12 @@ namespace OkzasoftDestek1.UserControls
             }
             else
                 MessageBox.Show("Bir sorun var ! ", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Error);
+                
+            /*    //Veri Doldurma
+            for (int i = 0; i < 20; i++)
+            {
+                BLL.kurumEkle(FakeData.NameData.GetCompanyName(), FakeData.PhoneNumberData.GetInternationalPhoneNumber(), FakeData.PlaceData.GetCountry(), FakeData.PlaceData.GetCity(), FakeData.PlaceData.GetStreetName());
+            }*/
         }
         private void ListeOlustur()
         {
@@ -45,9 +51,14 @@ namespace OkzasoftDestek1.UserControls
             List<OkzasoftDestek.Entities.Kurumlar> kurumListesi = BLL.kurumlariListele();
             if(kurumListesi != null && kurumListesi.Count>0)
             {
-                //lst_kurumlar.DataSource = kurumListesi;
-                lst_kurumlar.Items.Add(kurumListesi);
+                lst_kurumlar.ItemsSource = kurumListesi;
+                
             }
+        }
+
+        private void lst_kurumlar_SettingData(object sender, DataObjectSettingDataEventArgs e)
+        {
+
         }
     }
 }

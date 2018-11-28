@@ -31,6 +31,24 @@ namespace OkzasoftDestek.DatabaseLogicLayer
             else
                 con.Close();
         }
+        /*
+        public int ekipmanEkle(Ekipmanlar e)
+        {
+            try
+            {
+                cmd = new SqlCommand("insert into Ekipmanlar ()");
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+
+            }
+            return ReturnValues;
+        }
+        */
         public int kurumEkle(Kurumlar kr)
         {
             try
@@ -60,7 +78,7 @@ namespace OkzasoftDestek.DatabaseLogicLayer
         {
             try
             {
-                cmd = new SqlCommand("insert into Kisiler (kisiId,kisiAdSoyad,kisiTelefon,eposta,kurumId) values (@kisiId,@kisiAdSoyad,@eposta,@kurumId)", con);
+                cmd = new SqlCommand("insert into Kisiler (kisiId,kisiAdSoyad,kisiTelefon,eposta,kurumId) values (@kisiId,@kisiAdSoyad,@kisiTelefon,@eposta,@kurumId)", con);
                 cmd.Parameters.Add("@kisiId", SqlDbType.UniqueIdentifier).Value = k.kisiId;
                 cmd.Parameters.Add("@kisiAdSoyad", SqlDbType.NVarChar).Value = k.kisiAdSoyad;
                 cmd.Parameters.Add("@kisiTelefon", SqlDbType.NVarChar).Value = k.kisiTelefon;
@@ -72,7 +90,6 @@ namespace OkzasoftDestek.DatabaseLogicLayer
             catch (Exception ex)
             {
 
-                
             }
             finally
             {

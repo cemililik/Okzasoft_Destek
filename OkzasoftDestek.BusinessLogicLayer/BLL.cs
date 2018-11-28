@@ -87,6 +87,7 @@ namespace OkzasoftDestek.BusinessLogicLayer
         public List<Entities.Kurumlar> kurumlariListele()
         {
             List<Entities.Kurumlar> kurumListesi = new List<Entities.Kurumlar>();
+            
             try
             {
                 SqlDataReader reader = dll.kurumlariListele();
