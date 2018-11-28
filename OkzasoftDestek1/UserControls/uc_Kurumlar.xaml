@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="OkzasoftDestek1.UserControls.uc_Kurumlar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OkzasoftDestek1.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="588" d:DesignWidth="1016">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="230"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Margin="5,0,5,0">
+            <Label Content="Kurumlar" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="25" FontWeight="Bold" Background="{x:Null}" />
+        </Border>
+        <Border Grid.Column="0" Grid.Row="1" Background="Red" Margin="5,0,5,0">
+            <ListBox BorderBrush="{x:Null}" BorderThickness="0" x:Name="lst_kurumlar" HorizontalContentAlignment="Center" DataObject.SettingData="lst_kurumlar_SettingData">
+
+            </ListBox>
+        </Border>
+        <Border Background="#FF879998" Grid.Column="0" Grid.Row="2" Margin="5,0,5,0">
+            <StackPanel  VerticalAlignment="Center">
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Kurum Adı :  " FontWeight="Bold" FontSize="15"/>
+                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_ad"/>
+                    <Label Width="305"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Telefon Numarası :  " FontWeight="Bold" FontSize="15"/>
+                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_telefon"/>
+                    <Label Width="305"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Adresi :  " FontSize="15" FontWeight="Bold"/>
+                    <TextBox  Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_adres"/>
+                    <Label Width="305"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Sehir :  " FontSize="15" FontWeight="Bold"/>
+                    <TextBox Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_sehir"/>
+                    <Label Width="305"/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right">
+                    <Label Content="Ulke :  " FontSize="15" FontWeight="Bold"/>
+                    <TextBox Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="txt_kurum_ulke"/>
+                    <Label Width="305"/>
+                </DockPanel>
+                <DockPanel Height="10"/>
+                <DockPanel HorizontalAlignment="Center">
+                    <Button Content="Kurum Ekle" x:Name="btnKurumEkle" Style="{DynamicResource ucButonlar}" Click="btnKurumEkle_Click" />
+                    <Label Width="15"/>
+                    <Button Content="Kurum Guncelle" x:Name="btnKurumUpdate" Style="{DynamicResource ucButonlar}"/>
+                    <Label Width="15"/>
+                    <Button Content="Kurum Sil" x:Name="btnKurumSil" Style="{DynamicResource ucButonlar}"/>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</UserControl>
